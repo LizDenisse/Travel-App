@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" x:Class="TravelApp3.MainPage"
+             BackgroundColor="{StaticResource PageBackgroundColor}">
+             
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Color x:Key="PageBackgroundColor">#151c38</Color>
+            <Color x:Key="NormalTextColor">Yellow</Color>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <StackLayout VerticalOptions="Center"
+                 Margin="50,50,50,50">
+
+      
+        <Entry Placeholder="User Name"
+               Keyboard="Email"
+               x:Name="emailEntry"/>
+
+        <Entry Placeholder="Password"
+               IsPassword="True"
+               x:Name="passwordEntry"/>
+
+        <Button Text="Log in"
+                Clicked="LoginButton_Clicked"
+                BackgroundColor="#d1ad49"
+                TextColor="#151c38"/>
+
+
+       
+    </StackLayout>
+</ContentPage>
